@@ -102,9 +102,79 @@
                   </p>
                   <h4>Semaine 12: 25 au 31 July 2022</h4>
                   <p>
-                  Cette semane,j'ai fini le guide de l'installation de environment du travail de serveur.J'ai eu une réunion avec Thomas qui m'avait expliqué le concept de catégoristions.J'ai commencé à regardé les video sur vue.js et Laravel.l'Apache n'arrive pas à rouler pour une raison unconnu.Il y a aussi une problem de github que j'ai rencontré.
+                  Cette semaine,j'ai fini le guide de l'installation de environment du travail de serveur.J'ai eu une réunion avec Thomas qui m'avait expliqué le concept de catégoristions.J'ai commencé à regardé les video sur vue.js et Laravel.l'Apache n'arrive pas à rouler pour une raison unconnu.Il y a aussi une problem de github que j'ai rencontré.
                   </p>
-                  <h4>Semaine 13: 1 au 7 July 2022</h4>
+                  <h4>Semaine 13: 1 au 7 Août 2022</h4>
+                  <p>
+                    Cette semaine,j'ai essayé d'importer la base de donnée dans DBeaver,qui est proposé par Thomas pour simplifier le processus de gérer la base de donnée.Parce que Apache ne marche pas toujour,je n'ai pas réussi à importer la base de donnée MONA.
+                  </p>
+                  <h4>Semaine 14: 8 au 14 Août 2022</h4>
+                  <p>
+                    Cette semaine,Thomas m'avait proposé pleine de solutions pour importer la base de donnée,y compris les importer manuellement.Mais on a pas toujour réussi.Il faut noter que la base de donnée MONA est très grande,phpmyadmin dans XAMPP ne peut pas l'importer.
+                  </p>
+                  <p>
+                    J'ai finalment résolu le problème de server Apache.J'ai 
+                  </p>
+                  <h4>Semaine 15: 15 au 21 Août 2022</h4>
+                  <p>
+                    Cette semaine,Avec l'aide de Thomas,j'ai réussi à importer la base de donnée MONA dans Dbeaver par les étape suivants:
+                    (1)cd /Applications/XAMPP/xamppfiles/htdocs/mona-server<br>
+                    (2)mysql -u root<br>
+                    (3)use mona;
+                    (4)source storage/app/private/backups/dump-mona_app-only-territories.sql<br>
+                    (5)source storage/app/private/backups/dump-mona_app-without-territories-202208132123.sql<br>
+                  </p>
+                  <p>
+                    Lena m'avait demandé d'importer une base de donneé sous format .ods dans MONA.J'ai pu faire the fusion entre le ficher .ods et mona-server/storage/app/private/FormatDonneesMONA.csv.Je vais travailler sur le code la semaine prochaine.
+                  </p>
+                  <h4>Semaine 16: 22 au 28 Août 2022</h4>
+                  <p>
+                    Cette semaine,j'ai importer la nouvelle base de donnée dans MONA.J'ai suivi les étapes suivants:
+                  </p>
+                  <ul>
+                    <li>
+                        Choisir le type de donnée parmi Artwork,Badge,Heritage et Place et trouver le répertoire correspondant dans mona-server/app/Jobs/Api/V3.Le nouvelle base de donnée est un Artwork,Je vais travailler dans le répertoire mona-server/app/Jobs/Api/V3/Artwork.
+                    </li>
+                    <li>
+                        Vérifier la source de la base de donnée qu'on va importer et choisir le fichier correspondant dans le répertoire mona-server/app/Jobs/Api/V3/Artwork.Car le donnée qu'on va importer a la source MONA,j'ai travaillé sur le fichier ImportMONA.php
+                    </li>
+                    <li>
+                        git push to manpingli branch
+                    </li>
+                    <li>
+                        git checkout master
+                    </li>
+                    <li>
+                        git merge manpingli
+                    </li>
+                    <li>
+                        Push le code de git à MONA serveur
+                        <ul>
+                            <li>
+                        git remote add production ssh://picasso/home/mona/mona-prod.git
+                    </li>
+                    <li>
+                        git pull
+                    </li>
+                    <li>
+                        git push production master(J'ai rencontré deux erreurs de 'git-lfs',et j'ai utilisé rm -rf .git/hooks/post-checkout et rm -rf .git/hooks/pre-push pour resoudre ce problème)
+                    </li>
+                    </ul>
+                    
+                   
+                    <li>
+                        cd MONA-LAST
+                    </li>
+                    <li>
+                        dispatch "Api\V3\Artwork\ImportMONA"
+                    </li>
+                    <li>
+                        dispatch job for updating json
+                    </li>
+
+                  </ul>
+                  <h4>Semaine 16: 29 Août au 4 Septembre 2022</h4>
+
               </div>
             
         </section>
