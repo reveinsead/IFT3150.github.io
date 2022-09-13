@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="csrf-token" content="xqOCYGcE0hVPl0lZca4BvrDp7iU6nRcxvVVaQZua">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
 
         <title>MONA|Manping Li</title>
 
@@ -17,169 +18,60 @@
 
     </head>
     <body>
+        <header>
         <div class="container">
             <div class="my-4 text-center">
                 <a href="https://picasso.iro.umontreal.ca/~mona">
                     <img src="https://picasso.iro.umontreal.ca/~mona/storage/logo.svg" class="center"alt="MONA" height="128px">
                 </a>
             </div>
+            <h1>Manping Li-Été 2022</h1>
         </div>
-        <h1>Manping Li-Été 2022</h1>
+        </header>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="hebdo.html">Rapports hebdomanaires</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="final.html">Rapport Final</a>
+                    </li>
+                </ul>
+    </nav>
         <section id="Mandat" style="margin-top: 20px;">
-                <h2>Mandat du Projet</h2>
-                <span>Le rôle principal:travailler dans l'equipe de Serveur</span>
-                    <ul>
-                      <li>Gérer et Améliorer l'interface admin</li>
-                      <li>Trvailler avec l'équipe de ios et Trouver une méthode de stockage pour tracer toutes les photos que utilisateur a pris </li>
-                      <li>Trvailler avec l'équipe de Serveur pour finaliser le processus de development pour le serveur</li>
-                      <li>Travailler sur le guide de l'installation de l'environment du travail pour l'équipe de serveur</li>
-                    </ul>
-        </section>
-        <section>
-            <h2>Suivi Hebdomadaire</h2>
             <div>
-                  <h4>Semaine 1: 2 au 8 Mai 2022</h4>
-                  <p>Cette semaine,les participants de IFT3150 ont eu une réunion avec Lena.Elle a fait une présentation sur le projet et aussi sur l'organisation de l'équipe et la division du travail dans l'équipe.En plus,elle nous avons présentation les bases de données Patrimoines et les APIs utilisés.
-                  </p>
-                  <h4>Semaine 2: 9 au 15 Mai 2022</h4>
-                  <p>Cette semaine,j'a eu une réunion avec Simon qui travaille dans l'équipe de serveur.Il m'a présenté le structure du repertoire de MONA dans github et le processus de development actuelle de l'équipe de serveur.
-                  </p>
-                  <p>Thomas,qui aussi travaille dans l'équipe de serveur, m'a donné le processus d'installation de l'environnement de travail par logiciel element.J'ai passé beaucoup de temps sur l'installations et j'ai rencontré beaucoup de problème durant l'installation.Je crois que le problème est dû au fait que mon ordinateur a un M1 Pro chip qui n'est pas compatible avec beaucoup de logiciel.La relation de dépendance dans notre projet n'adapt pas à M1.J'ai aussi essayé l'installation sur linux dans M1 Pro chip,qui est rouler sur machine virtuelle "Parallels",mais il me smemble le driver de mysql ne peut pas être détecté par Linux dans "Parallels".J'aussi éssayé l'installation dans windows mais je n'ai pas réussi.
-                  </p>
-                  <h4>Semaine 3: 16 au 22 Mai 2022</h4>
-                  <p>Cette semaine,Thomas m'a suggéré d'essayer d l'installation par <a href="https://www.apachefriends.org/download.html">XAMPP</a>.XAMPP est synonyme de multi-plateforme (X), Apache (A), MySQL (M), PHP (P) et Perl (P). C’est une distribution Apache simple et légère qui permet aux développeurs de créer facilement un serveur web local à des fins de test.Mais j'ai rencontré la même problème que avant.J'ai ensuite essayé de installer XAMPP sur mon ordinateur précédant qui est mac os.Après avoir essayé deux version de installation,j'ai pu finialement installer le serveur local et tout les logiciels nécessaires dans mon ordinateur.
-                  </p>
-                  <p>D'ailleurs,l'équipe de serveur a eu une réunion avec Lena.Tout le monde a fait un résumé du travail.</p>
-                  <h4>Semaine 4: 23 au 29 Mai 2022</h4>
-                  <p>
-                    Cette semaine,j'ai participé à la réunion de patrimoine avec UX/UI designer,ios developer,Android developer,server developer et Lena pour mieux comprendre le projet. Thomas(server developer) a fait une présentation de son travail sur la base de donnée patrimoine qu'il a construit.
-                  </p>
-                  <p>J'ai aussi fait une réunion avec Simon.Il m'a présenté le concept de CI/CD(Continuous Integration and Continuous Delivery) et m'a montré ce que'il a fait sur optimization du processus du development avec Github actions,Dockerhub et Kubernetes</p>
-                 <h4>Semaine 5: 30 au 5 June 2022</h4>
-                  <p>
-                    Cette semaine,j'ai travaillé avec Simon pour faire avancer l'optimization du processus du development de l'équipe de serveur.Simon a résolu un problème de longue date.Notre équipe de projet 3150 été 2022 a la chance de rencontrer M. Laplame en personne.Nous avons présenté notre parcours scolaire et professionnel à M. Laplame.
-                  </p>
-                  <p>J'ai aussi assité à la réunion de UI avec Thomas et Margeurite.</p>
-                 <h4>Semaine 6: 6 au 12 June 2022</h4>
-                  <p>
-                    Cette semaine,Lena est en vacance.J'ai continuté à travailler avec Simon.Nous avons essayé de debugger ensemble mais nous n'avons pas pu à réussi.
-                  </p>
-                  <p>Margeurite represent Lena a organisé la réunion hebdomadaire,nous avons faire le point sur notre progress du projet</p>
-                  <h4>Semaine 7: 13 au 19 June 2022</h4>
-                  <p>
-                    Cette semaine,nous avons eu une réunion avec Lena et travaillé ensemble sur l'améliorer le processus de filtratation sur APP.J'ai deux exams intra cette semaine,je n'ai pas pu à travailler sur le projet.Je vais le récompenser dans les prochaines semaines.
-                  </p>
-                  <h4>Semaine 8: 20 au 26 June 2022</h4>
-                  <p>
-                    Cette semaine,j'ai commencé à apprendre le système de CI/CD et ces trois outils principaux:github actions,Dockerhub et kubernetes.
-                  </p>
-                  <ul>
-                    <li>
-                        github actions sont des processus qui agissent suite à un évènement sur github.
-                    </li>
-                    <li>
-                        Dockerhub permet de répertorié des images qui sont généré par github actions de MONA.
-                    </li>
-                    <li>
-                        kubernetes est une application qui mets à jour les images et les containers de la machine sur le suerveur de production du MONA.
-                    </li>
-                  </ul>
-                  <h4>Semaine 9: 27 au 3 July 2022</h4>
-                  <p>
-                    Cette semaine,j'ai un exam final.je n'ai pas pu à travailler sur le projet.Je vais le récompenser dans les prochaines semaines.
-                  </p>
-                  <h4>Semaine 10: 4 au 10 July 2022</h4>
-                  <p>
-                    Malheureusement,j'ai la covid cette semaine.Je n'ai pas pu travailler.
-                  </p>
-                 <h4>Semaine 11: 11 au 17 July 2022</h4>
-                  <p>
-                    Malheureusement,j'ai la covid cette semaine.J'ai participé à la réunion hebdomadiare avec Lena et membres du projet été.
-                  </p>
-                 <h4>Semaine 12: 18 au 24 July 2022</h4>
-                  <p>
-                    Je suis toujour très très fatiqué.J'ai participé aux réunion de l'équipe de serveur et réunion de projet hebdomadaire avec Lena et membres du projet été.Je n'ai pas pu travailler sur d'autre chose.Je vais le récompenser dans les prochaines semaines.
-                  </p>
-                  <h4>Semaine 12: 25 au 31 July 2022</h4>
-                  <p>
-                  Cette semaine,j'ai fini le guide de l'installation de environment du travail de serveur.J'ai eu une réunion avec Thomas qui m'avait expliqué le concept de catégoristions.J'ai commencé à regardé les video sur vue.js et Laravel.l'Apache n'arrive pas à rouler pour une raison unconnu.Il y a aussi une problem de github que j'ai rencontré.
-                  </p>
-                  <h4>Semaine 13: 1 au 7 Août 2022</h4>
-                  <p>
-                    Cette semaine,j'ai essayé d'importer la base de donnée dans DBeaver,qui est proposé par Thomas pour simplifier le processus de gérer la base de donnée.Parce que Apache ne marche pas toujour,je n'ai pas réussi à importer la base de donnée MONA.
-                  </p>
-                  <h4>Semaine 14: 8 au 14 Août 2022</h4>
-                  <p>
-                    Cette semaine,Thomas m'avait proposé pleine de solutions pour importer la base de donnée,y compris les importer manuellement.Mais on a pas toujour réussi.Il faut noter que la base de donnée MONA est très grande,phpmyadmin dans XAMPP ne peut pas l'importer.
-                  </p>
-                  <p>
-                    J'ai finalment résolu le problème de server Apache.J'ai 
-                  </p>
-                  <h4>Semaine 15: 15 au 21 Août 2022</h4>
-                  <p>
-                    Cette semaine,Avec l'aide de Thomas,j'ai réussi à importer la base de donnée MONA dans Dbeaver par les étape suivants:
-                    (1)cd /Applications/XAMPP/xamppfiles/htdocs/mona-server<br>
-                    (2)mysql -u root<br>
-                    (3)use mona;
-                    (4)source storage/app/private/backups/dump-mona_app-only-territories.sql<br>
-                    (5)source storage/app/private/backups/dump-mona_app-without-territories-202208132123.sql<br>
-                  </p>
-                  <p>
-                    Lena m'avait demandé d'importer une base de donneé sous format .ods dans MONA.J'ai pu faire the fusion entre le ficher .ods et mona-server/storage/app/private/FormatDonneesMONA.csv.Je vais travailler sur le code la semaine prochaine.
-                  </p>
-                  <h4>Semaine 16: 22 au 28 Août 2022</h4>
-                  <p>
-                    Cette semaine,j'ai importer la nouvelle base de donnée dans MONA.J'ai suivi les étapes suivants:
-                  </p>
-                  <ul>
-                    <li>
-                        Choisir le type de donnée parmi Artwork,Badge,Heritage et Place et trouver le répertoire correspondant dans mona-server/app/Jobs/Api/V3.Le nouvelle base de donnée est un Artwork,Je vais travailler dans le répertoire mona-server/app/Jobs/Api/V3/Artwork.
-                    </li>
-                    <li>
-                        Vérifier la source de la base de donnée qu'on va importer et choisir le fichier correspondant dans le répertoire mona-server/app/Jobs/Api/V3/Artwork.Car le donnée qu'on va importer a la source MONA,j'ai travaillé sur le fichier ImportMONA.php
-                    </li>
-                    <li>
-                        git push to manpingli branch
-                    </li>
-                    <li>
-                        git checkout master
-                    </li>
-                    <li>
-                        git merge manpingli
-                    </li>
-                    <li>
-                        Push le code de git à MONA serveur
-                        <ul>
-                            <li>
-                        git remote add production ssh://picasso/home/mona/mona-prod.git
-                    </li>
-                    <li>
-                        git pull
-                    </li>
-                    <li>
-                        git push production master(J'ai rencontré deux erreurs de 'git-lfs',et j'ai utilisé rm -rf .git/hooks/post-checkout et rm -rf .git/hooks/pre-push pour resoudre ce problème)
-                    </li>
-                    </ul>
-                    
-                   
-                    <li>
-                        cd MONA-LAST
-                    </li>
-                    <li>
-                        dispatch "Api\V3\Artwork\ImportMONA"
-                    </li>
-                    <li>
-                        dispatch job for updating json
-                    </li>
+                <h2>Énoncé du Projet</h2>
+                <p>
+                    "Le projet est un projet de développement d'une application mobile par l'organisme MONA, visant la découverte de l'art public, mené par le Département d'histoire de l'art et d'études cinématographiques, en coopération avec le Département d'informatique
+                    et de recherche opérationnelle . L'organisme collabore coinjointement avec le groupe de recherche en histoire de l'art Art et site et la professeure Suzanne Paquet, directrice du département d'histoire de l'art de l'Université de Montréal."
+                </p>
+                <ul>
+                    <li><strong>Le rôle principal: </strong>développeur de Serveur</li>
+                    <li><strong>Le framework du travail: </strong>Laravel</li>
+                    <li><strong>Les serveurs du travail: </strong>Apache server,Mysql server</li>
+                    <li><strong>Les languages du travail: </strong>php,vue.js,SQL</li>
+                </ul>
+            </div>
+            <div>
+                <h2>Mandat du Projet</h2>
+                <p>
+                    Le principal mandat est d'implementer interface admin v3. Ceci implique connecter la nouvelle base de données Patrimoines,générer ou mise à jour des pages pour chaque artworks, place, heritage,user basé sur la nouvelle version de base de donnée(v3) et ajouter ou amelioer toutes les fonctionnalités requises afin que l'interface admin à bien fonctionner.
+                </p>
+                <p>Les autre mendats:</p>
+                <ul>
+                      <li>Résoudre les bugs dans interface admin</li>
+                      <li>Importer la nouvelle données et mise à jour la base de données</li>
+                      <li>Travailler avec l'équipe de Serveur pour finaliser le processus de development pour le serveur</li>
+                      <li>Travailler sur le guide de l'installation de l'environment du travail pour l'équipe de serveur</li>
+                </ul>
 
-                  </ul>
-                  <h4>Semaine 16: 29 Août au 4 Septembre 2022</h4>
-
-              </div>
-            
+            </div>
         </section>
+        
 
 
     </body>
-
 
