@@ -62,8 +62,24 @@
             <li>mysql.server start</li>
             <li>sudo /Applications/XAMPP/xamppfiles/bin/apachectl start</li></ul>
         <p>Lena ensuite m'a demandé d'ajouter des données depuis la fichier de ods dans la base de données MONA. Cette tâche me permet d'apprendre comment convertir un fichier ods à un fichier csv,comment écrire le code pour importer le fichier csv dans la base de données,comment vérifier les données sont biens importé et comment mise à jour la base de données dans le serveur.Les étapes sont documentés dans mon report hebdomentaires.Après avoir fini ce tâche,je commence à mieux comprendre le projet et coomment fonctionne la base de données dans le projet.</p>
-        <p></p>
-    
+        <p>J'ai ensuite travaillé sur l'implementation de l'interface admin V3.Parce que la base de données est restructuré dans V3,le travail à faire n'est pas mineure.J'ai commencé à refaire tout les fichiers relie aux tables d'index pour user,artwork,patrimoine et place en utilisant la language Vue.js.Les fichiers concernés sont: ArtworkGrid.vue,HeritageGrid.vue,PlaceGrid.vue et UserGrid.vue</p>
+        <p>Par rapport au version V2,j'ai corrigé les prochaines fonctions:</p>
+        <ul><li>L'affichage des photos et commnetaires ne fonctionnent pas dans V2</li>
+            <li>Le bouton 'voir details' ne marche pas pour la majorité de artworks. dans V2</li>
+            <li>La majorité de columns ne s'affichent pas correctement.Par example,dans la liste user,le column 'Updated At' et 'Created At' affichent la même date dans V2</li>
+            <li>Les routes menant vers la vue détaillée de l'oeuvre n'ont pas été définis correctment dans le serveur dans V2</li>
+        </ul>
+        <p>Ensuite,j'ai modifié show.blade.php pour artwork et ajouter trois show.blade.php fichiers pour users,places,heritages ainsi que modifier le method show dans les fichiers de </p>controlleurs:ArtworkController.php,HeritageController.php,PlaceController.php,UserController.php.
+        <p>D'ailleurs,j'ai refait le fichier create.blade.php  pour artworks et le method create dans ArtworkController.php.A couse du temps limité,je n'ai pas fait create pour patrimoines et places.</p>
+        <p>J'ai aussi ajouté les fonctions suivants:</p>
+        <ul><li>Ajouter un lien de url pour artworks et patrimoines dans le bouton 'voir details' </li>
+            <li>Ajouter un lien 'user detail' dans 'show' de artworks,patrimoines et places,pour qu'on peut voir le détail de l'utilisateur pour chaque oeuvre</li>
+            <li>Dans le tableau d'index de users,j'ai partitionne le column 'Collection' à trois columns 'Collection artworks','Collection heritages' et 'Colleciton places' pour qu'on puisse faire analyse sur le user facilement dans le future.</li></ul>
+        <p>Après implementer la version 3,tout les boutons fonctionnent dans l'interface admin.Tout les données s'affichent correctment.Sauf qu'il reste un bug que je n'ai pas réussi à résoudre:le tri des photos et commentaires dans le table de index ne fonctionnent pas toujours.</p>
+
+        <p>Il ne faut pas oublier à mentionner qu'au début du projet,j'ai travaillé avec Simon pour apprendre le concept de l'intégration et déploiement continus(CI/CD) qui permet d'optimiser et de renforcer l'automatisation et la supervision des modifications apportées aux codes des applications, lors de la création de logiciels ou de services web.</p>
+
     <h4><strong>Conclusions</strong></h4>
+    <p>Je me sens extrêmement chanceux de faire ce projet et je suis très contente du résultat malgré les très nombreux difficultés que j'ai rencontrés.J’ai rapidement pris l’habitude de travailler en équipe.Avec le support de mes coéquipiers, je me sens plus à l’aise de affronter aux difficulté touts les jours et le resoudre petit à petit.J'ai aussi appris comment produire le code en utilisant un nouveau langage en peu de temps.J'ai eu l'oppportunité de travailler sur la base de données et aussi sur l'interface admin qui me permettent d'apprendre deux processus différents.Finalement,j'ai appris comment finir un projet avec bon résultat dans un temps limité.</p>
 
     </section>
