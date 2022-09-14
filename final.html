@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="csrf-token" content="xqOCYGcE0hVPl0lZca4BvrDp7iU6nRcxvVVaQZua">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
+        <title>MONA|Manping Li</title>
+
+        <!-- Fonts -->
+        <link rel="dns-prefetch" href="//fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
+
+        <!-- Styles -->
+        <link href="https://picasso.iro.umontreal.ca/~mona/css/app.css" rel="styleshee">
+        <link rel="stylesheet" href="style.css" />
+
+    </head>
+    <body>
+        <header>
+        <div class="container">
+            <div class="my-4 text-center">
+                <a href="https://picasso.iro.umontreal.ca/~mona">
+                    <img src="https://picasso.iro.umontreal.ca/~mona/storage/logo.svg" class="center"alt="MONA" height="128px">
+                </a>
+            </div>
+            <h1>Manping Li-Été 2022</h1>
+        </div>
+        </header>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="hebdo.html">Rapports hebdomanaires</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="final.html">Rapport Final</a>
+                    </li>
+                </ul>
+    </nav>
+    <section>
+    <h2>Rapport Final</h2>
+    <h4><strong>Introduction</strong></h4>
+    <p>Durant la session, j’ai travaillé en tant que développeur serveur utilisant le framework Laravel et les langage php,MySQL et vue.js.</p>
+
+    <p>Le mandat pour le projet consiste à implémenter la nouvelle version(V3) de l'interface d'administration basé sur la derniere version de de la base de données et améliorer et résoudre les bugs de l'interface d'administration,ajouter nouvelle données dans la base de données,ainsi que faire la recherche sur l'optimisation le processus de dévelopment du serveur en utilisant le concept the CI CD.</p>
+    <h4><strong>Développement</strong></h4>
+    <p>Ce projet a été la première fois que je développais dans un environnement de back-end,c’était quelque chose que je voulais faire depuis quelque temps car je peut travailler sur le serveur,la base de données et les API derrière une application web en même temps et je peux aussi apprendre beaucoup de langues utiles.</p>
+    <p>J’ai passé une bonne partie du début de session à installer l'environnement de travail.Ceci implique installer Apache serveur,MySQL serveur,languages php,vue.js et le framework Laravel，ainsi que connecter le outil de la base de données avec la base de données du projet.J'ai rencontré deux difficulté majeurs:</p>
+    <ul><li><span><strong>Le processus d'installation ne marche pas dans MAC OS M1 chip:</strong></span></br><span>Il me semble que à cause de la dépendence dans le projet MONA,il y a des conflits entre le M1 chip et Laravel.Je n'ai pas réussi à installer les serveurs et les languages dans mon ordinateur.Avec l'aide de Thomas et Simon,j'ai finalement installé l'environnement de travail avec XAMPP.XAMPP est un ensemble de logiciels permettant de mettre en place un serveur Web local, un serveur FTP et un serveur de messagerie électronique. Il s'agit d'une distribution de logiciels libres (X (cross) Apache MariaDB Perl PHP) offrant une bonne souplesse d'utilisation, réputée pour son installation simple et rapide.
+        <span>Même avec XAMPP,l'installation vue.js n'est pas facile.J'ai rencontré beaucoup de problème et je l'ai documenté dans de  
+            <span><a href="https://github.com/imglab/mona-server/wiki/User-guide-to-set-up-server-environments-using-XAMPP-on-Mac-M1">wiki </a></span>du projet</li>
+        <li>
+            <span><strong>Importer la base de données MONA dans DBeaver(et aussi phpMyAdmin):</strong></span>DBeaver est un client SQL multi-plateformes en Java qui se veut universel et vise à simplifier la vie des développeurs et des administrateurs de base de données. Il supporte les moteurs de bases de données les plus populaires. J'ai éssayé tout les commandes dans le liens de <span><a href="https://github.com/imglab/mona-server/wiki/Mise-%C3%A0-jour-des-donn%C3%A9es">wiki </a></span>,mais riens marche.Finalement,avec l'aide de Thomas,J'ai réussi à importer la base de données MONA dans DBeaver et j'ai pu commencer à travailler sur l'interface admin et la base de données.
+        </li></ul>
+        <p>J'ai aussi renconté beaucoup de problèmes techiniques reliés aux XAMPP dans M1.Par example,chanque fois que je redémarre mon ordinateur,le serveur de Apache et MySQL ne peuvent pas redémarrer par le panneau de commande de XAMPP,il faut faire les prochaine étaps dans terminal pour résoudre le problème</p>
+        <ul><li>sudo killall mysqld</li>
+            <li>sudo killall httpd</li>
+            <li>mysql.server start</li>
+            <li>sudo /Applications/XAMPP/xamppfiles/bin/apachectl start</li></ul>
+        <p>Lena ensuite m'a demandé d'ajouter des données depuis la fichier de ods dans la base de données MONA. Cette tâche me permet d'apprendre comment convertir un fichier ods à un fichier csv,comment écrire le code pour importer le fichier csv dans la base de données,comment vérifier les données sont biens importé et comment mise à jour la base de données dans le serveur.Les étapes sont documentés dans mon report hebdomentaires.Après avoir fini ce tâche,je commence à mieux comprendre le projet et coomment fonctionne la base de données dans le projet.</p>
+        <p></p>
+    
+    <h4><strong>Conclusions</strong></h4>
+
+    </section>
